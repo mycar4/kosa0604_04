@@ -3,8 +3,8 @@ from utils import llm_call  # 사용자가 만든 모듈
 
 def run_router_workflow(user_prompt : str):
     
-    name = '현하'
-
+    name = {'현하1' , '차성종', '삼구'}
+    
     router_prompt = f"""
     사용자의 프롬프트/질문: {user_prompt}
 
@@ -36,3 +36,7 @@ response = run_router_workflow(query2)
 query3 = "파이썬으로 API 웹서버를 만들어줘"
 print(query3)
 response = run_router_workflow(query3)
+
+
+
+
